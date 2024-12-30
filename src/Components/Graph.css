@@ -1,0 +1,45 @@
+.graph-container {
+    background-color: #111827;
+    padding: 0;
+    /* Remove padding to ensure no extra space */
+    border-radius: 10px;
+    width: 50vw;
+    /* 30% of viewport width */
+    height: 22vh;
+    /* 30% of viewport height */
+    margin: 0 auto;
+    /* Center the container */
+    display: flex;
+    flex-direction: column;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+.graph-button {
+    background-color: white;
+    border: none;
+    padding: 1px 5px;
+    /* Decreased padding for smaller button */
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    /* Smaller font size */
+}
+
+.graph-button span {
+    margin-left: 5px;
+}
+
+.graph-content {
+    flex: 1;
+    padding: 5px;
+    font-size: 10px;
+}

@@ -1,0 +1,11 @@
+.menuItem {
+    background-color: #111827;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 40vw;
+    height: 22vh;
+    /* Adjust width as needed */
+    margin: 0 auto;
+    /* Center the container */
+    color: white;
+  }
