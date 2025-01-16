@@ -1,0 +1,163 @@
+.navbar {
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    position: fixed;
+}
+
+.navbar-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.form-group.has-search {
+    width: 40%;
+    height: 80%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbarcontent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mail, .setting, .notification {
+    width: 8%;
+    height: 60%;
+    background-color: #334155;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.profilepic {
+    width: 8%;
+    height: 60%;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+@media screen and (max-width: 380px) {
+    
+    .form-group.has-search {
+        width: 80%;
+        height: 10%;
+    }
+
+    .navbarcontent {
+        width: 80%;
+        height: 100%;
+    }
+
+    .mail, .setting, .notification, .profilepic {
+        width: 30%;
+        height: 60%;
+    }
+}
+
+
+
+@media (min-width: 380px) and (max-width: 620px) {
+    .form-group.has-search {
+        width: 80%;
+        height: 10%;
+    }
+
+    .navbarcontent {
+        width: 80%;
+        height: 100%;
+    }
+
+    .mail, .setting, .notification, .profilepic {
+        width: 15%;
+        height: 60%;
+    }
+}
+
+
+@media (min-width: 620px) and (max-width: 880px) {
+    .form-group.has-search {
+        width: 40%;
+    }
+
+    .navbarcontent {
+        width: 80%;
+        height: 100%;
+    }
+
+    .mail, .setting, .notification, .profilepic {
+        width: 10%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1124px) {
+    .form-group.has-search {
+        width: 40%;
+    }
+
+    .navbarcontent {
+        width: 80%;
+        height: 100%;
+    }
+
+    .mail, .setting, .notification, .profilepic {
+        width: 9%;
+        height: 60%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    .form-group.has-search {
+        width: 60%;
+        border-radius: 20px;
+    }
+
+    .navbarcontent {
+        width: 50%;
+        height: 100%;
+    }
+
+    .mail, .setting, .notification {
+        width: 8%;
+        height: 60%;
+        margin: 5px;
+        padding: 8px;
+    }
+    .profilepic {
+        width: 8%;
+        height: 60%;
+        margin: 5px;
+    }
+}

@@ -1,19 +1,20 @@
 import React from 'react'
+import './Details.css'
 
 const Details = ({ imageURL, name, Order_no, Amount, Status }) => {
     return (
         <>
-            <td style={{width: 'auto', height: '100%', color: 'white', fontSize: '10px'}} className='d-flex align-items-center justify-content-start'>
+            <td className='d-flex align-items-center justify-content-start table-rows text-white>'>
                 {/* <div className="" style={{ border: "1px solid white", borderRadius: "10px" }}>
                 </div> */}
-                <img src={imageURL} alt={name} style={{ width: '10%', height: '50%', borderRadius: "20px", paddingRight: "5px"}} />
-                {name}
+                <img className='image-fix' src={imageURL} alt={name} />
+                <span className='text-white'>{name}</span>
             </td>
-            <td  style={{width: 'auto', height: '100%', color: 'white', fontSize: '10px'}}>{Order_no}</td>
-            <td style={{width: 'auto', height: '100%', color: 'white', fontSize: '10px'}}>
+            <td className='table-rows text-white'>{Order_no}</td>
+            <td className='table-rows text-white'>
                 {Amount}
             </td>
-            <td style={{width: 'auto', height: '100%', color: 'white', fontSize: '10px'}}>
+            <td className='table-rows text-white' >
                 <button className={`bg-${Status === 'Pending' || Status === 'Cancelled' ? 'danger-emphasis' : 'success-emphasis'} text-${Status === 'Pending' || Status === 'Cancelled' ? 'danger' : 'success'}`} style={{ border: "1px solid white", borderRadius: "10px" }}>
                     {Status}
                 </button>

@@ -1,11 +1,152 @@
 .menuItem {
-    background-color: #111827;
+  background-color: #111827;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 40vw;
+  height: 22vh;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Center the container */
+  color: white;
+}
+
+.menuicons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  margin: 2px 0px;
+  border-radius: 100%;
+}
+
+.icons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+}
+
+.icon-svg {
+  height: 8%;
+  width: 8%;
+  background-color: #0c4a6e;
+  border-radius: 20px;
+  padding: 2px;
+  enable-background: new 0 0 122.88 91.14;
+}
+
+.icon-name {
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.arrowbutton {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 20%;
+}
+
+.arrowbutton-svg {
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+  background-color: #4b5563;
+  padding: 5px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 510px) {
+  .menuItem {
+    max-width: 90vw;
+    height: 25vh;
     padding: 10px;
-    border-radius: 10px;
-    max-width: 40vw;
-    height: 22vh;
-    /* Adjust width as needed */
-    margin: 0 auto;
-    /* Center the container */
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #111827;
+    align-items: center;
   }
+
+  .menuicons {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icons {
+    width: 45vw;
+    /* background-color: yellow; */
+  }
+
+  .arrowbutton {
+    width: 15vw;
+    /* background-color: turquoise; */
+  }
+
+  .icon-svg {
+    height: 15%;
+    width: 15%;
+    padding: 2px;
+  }
+
+  .icon-name {
+    font-size: 12px;
+  }
+
+  .arrowbutton-svg {
+    width: 25%;
+    height: 25%;
+    padding: 2px;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 768px) {
+  .menuItem {
+    max-width: 40vw;
+    height: 25vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #111827;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+
+  .menuicons {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+  }
+
+  .icons {
+    width: 35vw;
+  }
+
+  .arrowbutton {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .icon-svg {
+    height: 5vh;
+    width: 5vw;
+    padding: 2px;
+  }
+
+  .icon-name {
+    font-size: 12px;
+  }
+
+  .arrowbutton-svg {
+    width: 4vw;
+    height: 4vh;
+    padding: 2px;
+  }
+}

@@ -1,30 +1,144 @@
 .profit-container {
-    background-color: #111827;
-    padding: 10px;
-    border-radius: 10px;
-    width: 40vw;
-    height: 15vh; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container */
-    color: white;
+  background-color: #111827;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40vw;
+  height: 15vh;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Center the container */
+  color: white;
+  display: flex;
+  align-items: flex-start;
+}
+
+.Currency {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.chart-container {
+  width: 30vw;
+  /* Set width to 20vw */
+  height: 12vh;
+  /* Set height to 15vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+
+
+.amount {
+  font-size: 14px;
+  margin: 5px 0px;
+  font-weight: bolder;
+}
+
+.netprofit {
+  font-size: 8px;
+}
+
+.margin {
+  color: #84cc16;
+}
+
+/* Responsive design */
+@media screen and (max-width: 510px) {
+  .profit-container {
+    width: 90vw;
+    height: 20vh;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
   }
-  
+
   .Currency {
-    width: 10vw;
+    width: 30vw;
     height: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
   }
-  
+
   .chart-container {
-    width: 30vw; /* Set width to 20vw */
-    height: 12vh; /* Set height to 15vh */
+    width: 60vw;
+    /* Set width to 20vw */
+    height: 15vh;
+    /* Set height to 15vh */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* background-color: yellow; */
+
   }
+
+  .amount {
+    font-size: 15px;
+    margin: 15px 0px;
+    font-weight: bolder;
+  }
+
+  .netprofit {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 510px) and (max-width: 768px) {
+  .profit-container {
+    width: 40vw;
+    height: 15vh;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+
+
+  .Currency {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .chart-container {
+    width: 60%;
+    height: 100%;
+    /* padding: 3px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #84cc16; */
+  }
+
+  .amount {
+    font-size: 15px;
+    margin: 10px 0px;
+    font-weight: bolder;
+  }
+
+  .charttext {
+    font-size: 5px;
+    text-align: center;
+  }
+
+  .netprofit {
+    font-size: 10px;
+  }
+
+}

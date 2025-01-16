@@ -27,12 +27,12 @@ export default function Profit() {
         <div className="profit-container">
 
             <div className="Currency">
-                <span style={{ fontSize: '10px' }}>Net Profit</span>
-                <span style={{ fontSize: '20px', margin: '5px 0px', fontWeight: 'bolder' }}>$ 6759.25</span>
-                <span style={{ color: '#84cc16' }}>▲ 3%</span>
+                <span className='netprofit'>Net Profit</span>
+                <span className='amount'>$ 6759.25</span>
+                <span className='margin'>▲ 3%</span>
             </div>
             <div className="chart-container">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer className='chart' width="100%" height="100%">
                     <PieChart>
                         <Pie
                             data={data}
@@ -52,7 +52,7 @@ export default function Profit() {
                         </Pie>
                     </PieChart>
                 </ResponsiveContainer>
-                <span style={{fontSize: '10px', textAlign: 'center'}}>* The values here has been rounded off.</span>
+                <span className='charttext' >* The values here has been rounded off.</span>
             </div>
 
         </div>

@@ -43,3 +43,20 @@
     padding: 5px;
     font-size: 10px;
 }
+
+
+/* Responsive design */
+@media screen and (max-width: 510px) {
+    .graph-container {
+        width: 90vw;
+        height: 25vh;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 768px) {
+    .graph-container {
+        width: 50vw;
+        height: 25vh;
+    }
+}
+

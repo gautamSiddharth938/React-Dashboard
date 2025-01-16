@@ -11,14 +11,15 @@ import Cards from './Components/Cards';
 
 function App() {
   return (
-    <div>
+    <div className='app-container'>
       <Navbar />
-      <div className="d-flex">
-
-        <Sidebar />
-        <div style={{ flex: '1', backgroundColor: '#020617', color: 'white', padding: '1px' }}>
-          <span style={{fontSize: '15px', fontWeight: 'bolder', padding: '5px'}}>Dashboard</span>
-          <div style={{ gridColumn: 'span 2', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '5px', padding: '5px', margin: '5px' }}>
+      <div className="main-content">
+        <div className="side-content">
+          <Sidebar />
+        </div>
+        <div className='dashboard' >
+          <span className='dashboard-heading' >Dashboard</span>
+          <div className='dashboard-content' >
             <Cards />
             <Profit />
             <Graph />
@@ -28,7 +29,7 @@ function App() {
           </div>
         </div>
       </div>
-      
+
     </div>
   );
 }

@@ -7,17 +7,17 @@ export default function Accounts() {
     const data = Data.accounts;
     return (
         <div className="accounts-container">
-            <span style={{fontSize: '15px', fontWeight: 'bolder'}}>Recent Orders</span>
+            <span className='accounts-heading'>Recent Orders</span>
             <table className="table">
                 <thead >
                     <tr>
-                        <th style={{width: '40%',color: 'white', fontSize: '10px'}} scope="col">Customer</th>
-                        <th style={{width: '20%',color: 'white', fontSize: '10px'}} scope="col">Order no.</th>
-                        <th style={{width: '20%',color: 'white', fontSize: '10px'}} scope="col">Amount</th>
-                        <th style={{width: '20%',color: 'white', fontSize: '10px'}} scope="col">Status</th>
+                        <th className='table-heads text-white' scope="col">Customer</th>
+                        <th className='table-heads text-white' scope="col">Order no.</th>
+                        <th className='table-heads text-white' scope="col">Amount</th>
+                        <th className='table-heads text-white' scope="col">Status</th>
                     </tr>
                 </thead>
-                <tbody >
+                <tbody className='text-white' >
                     {data.map((element) => {
                         const ImageUrl = process.env.PUBLIC_URL + '/img/' + element.imageURL;
                         return (

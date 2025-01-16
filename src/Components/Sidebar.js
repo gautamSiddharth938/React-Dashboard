@@ -1,12 +1,13 @@
 import React from 'react'
+import './Sidebar.css'
 
 export default function Sidebar() {
     return (
         <>
-            <div className="d-flex flex-column" style={{ height: "91vh", width: "4vw", paddingTop: '20px', backgroundColor: '#0f172a' }}>
-                <div className="" style={{ height: "50%", width: "100%", alignItems: 'center', display: 'flex', flexFlow: 'column'}}>
+            <div className='sidebar-container'>
+                <div className="sidebar-left">
                     <div className="" >
-                        <svg width="80%" height="70%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#002aff">
+                        <svg className='svgs' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#002aff">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -17,7 +18,7 @@ export default function Sidebar() {
                         </svg>
                     </div>
                     <div className="">
-                        <svg width="80%" height="70%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <svg className='svgs' viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -28,7 +29,7 @@ export default function Sidebar() {
                         </svg>
                     </div>
                     <div className="">
-                        <svg fill="#ffffff" width="80%" height="70%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.996 499.996" stroke="#ffffff">
+                        <svg fill="#ffffff" className='svgs' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.996 499.996" stroke="#ffffff">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -39,7 +40,7 @@ export default function Sidebar() {
                         </svg>
                     </div>
                     <div className="">
-                        <svg width="80%" height="70%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='svgs' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -50,7 +51,7 @@ export default function Sidebar() {
                         </svg>
                     </div>
                     <div className="">
-                        <svg width="80%" height="70%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className='svgs' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -61,9 +62,9 @@ export default function Sidebar() {
                         </svg>
                     </div>
                 </div>
-                <div className="" style={{ height: "50%", width: "100%", alignItems: 'center', display: 'flex', flexFlow: 'column', justifyContent: 'end', marginBottom: '20px' }}>
+                <div className="sidebar-right">
                     <div className="">
-                        <svg fill="#ffffff" width="80%" height="70%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.213 491.213" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#ffffff">
+                        <svg fill="#ffffff" className='svgs' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.213 491.213" transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#ffffff">
 
                             <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
